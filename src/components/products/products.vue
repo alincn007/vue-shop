@@ -1,21 +1,20 @@
 <template>
-<div id="showcase" class="has-text-centered" v-show="this.state.step === 1">
-    <div class="columns box">
-        <div class="column" v-for="product in products" v-bind:key="product.id">
+    <div class="products-list">
+        <div class="product" v-for="p in products" v-bind:key="p.id">
             <div class="title">
-                <h3>{{ product.product }}</h3>
+                <h3>{{ p.title }}</h3>
             </div>
-            <img v-bind:src="product.image" @click="add(product)">
-            <div class="title" >${{ formatPrice(product.price) }}</div>
+            <img v-bind:src="p.image" v-on:click="add(p)">
             
-            <a ref="btnAdd" class='button is-outlined is-danger' @click="add(product)">
-                <span class="icon"><i class="material-icons">shopping_cart</i>Buy</span>
+            <div class="title">
+                ${{formatPrice(p.price) }}
+            </div>
+            
+            <a ref="btnAdd" class='add-to-cart-btn' v-on:click="add(p)">
+                <span class="icon"><i class="material-icons">shopping_cart</i></span>
             </a>
-        
         </div>
-
     </div>   
-    </div>
 </template>
 
 <script>
@@ -46,18 +45,27 @@ export default {
 </script>
 
 <style>
-.columns {
+.products-list {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    margin: auto;
     justify-content: center;
 }
 
-.column {
+.product {
     margin-bottom: 10px;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border: solid 5px transparent;
+    align-self: flex-start;
+}
+
+.add-to-cart-btn {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn .material-icons {
+    color: #333;
 }
 </style>

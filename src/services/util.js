@@ -25,11 +25,8 @@ const discount = (list, value, field) =>
 		return e;
 	});
 
-const creditCard = objCard => {
-	return new Moip.CreditCard({
-		pubKey:
-			"-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu0Ch0QUWeFBWUyV0aCrTYpHKDw0ctYQC07G12RrMOGNGn2G+DYAfV2U+1yXor3PiwidgdGkkgyrNzvgDiJZDSf4rX987SyGAxv3GkEzCbW774wBJ5mB3VR5cbgocDrhSm7WmDLsdKV8pkXnym7bBmeZ+zu8pL1b6Vuz8yJLWlycEYRnIf1MtuaMaujMj1IqH5D8myqZFp2SnU9jlA3EIFZ5OZCMMEDvf4UlK95+ztd1Nlx8BneoNd2vIEhktUaslG/VHPJQphh4SrHFX0BSIDWMgX2JtezEXp+E0r6gCa9R8Mxg69rEjoC9TFUvatjCy9Nk9md4TcqwhDzpwsKhy8wIDAQAB-----END PUBLIC KEY-----"
-	});
+const creditCard = () => {
+	return {}
 };
 
 const cloneObject = obj => JSON.parse(JSON.stringify(obj));

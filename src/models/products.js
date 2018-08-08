@@ -4,59 +4,62 @@ export default {
 	products: [
 		{
 			image: "../../static/prod4.jpg",
-			product: "Watch",
+			title: "Watch",
 			price: 999.0,
-			detail: "12 euros",
-			quantity: 1
+			description: "12 euros",
+			quantity: 1,
+			id: 1,
 		},
 		{
 			image: "../../static/prod1.jpg",
-			product: "T-shirt",
+			title: "T-shirt",
 			price: 100.0,
-			detail: "Em até 11x sem juros",
-			quantity: 1
+			description: "Em até 11x sem juros",
+			quantity: 1,
+			id: 2,
 		},
 		{
 			image: "../../static/prod3.jpg",
-			product: "Running shoes",
+			title: "Running shoes",
 			price: 59.99,
-			detail: "Only 1 pair left",
-			quantity: 1
+			description: "Only 1 pair left",
+			quantity: 1,
+			id: 3
 		},
-		{
+		/* {
 			image: "../../static/prod2.jpg",
-			product: "Gym shoes",
+			title: "Gym shoes",
 			price: 349.99,
-			detail: "only 30 euros",
+			description: "only 30 euros",
 			quantity: 1
 		},
 		{
 			image: "../../static/prod4.jpg",
-			product: "Watch",
+			title: "Watch",
 			price: 999.0,
-			detail: "12 euros",
+			description: "12 euros",
 			quantity: 1
 		},
 		{
 			image: "../../static/prod1.jpg",
-			product: "T-shirt",
+			title: "T-shirt",
 			price: 100.0,
-			detail: "Em até 11x sem juros",
+			description: "Em até 11x sem juros",
 			quantity: 1
 		},
 		{
 			image: "../../static/prod3.jpg",
-			product: "Running shoes",
+			title: "Running shoes",
 			price: 59.99,
-			detail: "Only 1 pair left",
+			description: "Only 1 pair left",
 			quantity: 1
 		},
 		{
 			image: "../../static/prod2.jpg",
-			product: "Gym shoes",
+			title: "Gym shoes",
 			price: 349.99,
-			detail: "only 30 euros",
+			description: "only 30 euros",
 			quantity: 1
-		}
+		} */
 	]
 };

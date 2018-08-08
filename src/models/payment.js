@@ -3,7 +3,7 @@
 export default {
 	pay: {
 		installmentCount: 1,
-		statementDescriptor: "minhaLoja.com",
+		statementDescriptor: "gigi.com",
 		fundingInstrument: {
 			method: "CREDIT_CARD",
 			creditCard: {
