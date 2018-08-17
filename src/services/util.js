@@ -26,7 +26,7 @@ const discount = (list, value, field) =>
 	});
 
 const creditCard = () => {
-	return {}
+	return {};
 };
 
 const cloneObject = obj => JSON.parse(JSON.stringify(obj));

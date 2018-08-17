@@ -45,18 +45,21 @@ export default {
 </script>
 
 <style>
-.products-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+div.products-list {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr; 
+
 }
 
 .product {
     margin-bottom: 10px;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    border: solid 5px transparent;
-    align-self: flex-start;
+}
+
+.product > img {
+    max-width: 400px;
+    max-height: 200px;
 }
 
 .add-to-cart-btn {

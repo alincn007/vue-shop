@@ -1,9 +1,8 @@
 <template>
 <div>
     <div class="register-card">
-      <img class="icon-question" src="/assets/img/icons/question.png">
       <div class="text-center">
-        <img class="icon-header" src="assets/img/icons/bcp-logo.png">
+        <img class="icon-header" src="../../assets/img/icons/cards.jpg">
       </div>
       <div class="container-text">
           <h3 class="grey-bold-font title-h2 text-center">Enter your card details</h3>
@@ -104,16 +103,11 @@ export default {
             // TODO:  CAll API
         },
         fill: function() {
-            if (this.cardNum === "") {
-                this.cardNum = "4242424242424242";
-                this.cvc = "123";
-                this.expMonth = "12";
-                this.expYear = "18";
+            if (!this.form.cardNum) {
+                this.form.cardNum = "4242424242424242";
+                this.form.name = "Mr Smith";
             } else {
-                this.cardNum = "";
-                this.cvc = "";
-                this.expMonth = "";
-                this.expYear = "";
+                this.form.name = "Mr Smith";
             }
         },
         ccIsValid: function() {
@@ -160,6 +154,7 @@ export default {
 
 .md-card {
     margin: 20px auto;
+    overflow: hidden;
 }
 
 .register-card {
@@ -170,12 +165,5 @@ export default {
 /*Icons*/
 .icon-header {
     height: 80px;
-}
-
-.icon-question {
-    position: absolute;
-    height: 25px;
-    top: 15px;
-    right: 15px;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
 
-      <h3>Welcome to Supico!</h3>
+      <h3>Welcome to the Car Shop!</h3>
 
     <md-steppers :md-active-step.sync="active" md-linear md-sync-route="true">
         <md-step 
